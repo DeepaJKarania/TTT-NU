@@ -1,0 +1,16 @@
+com\shoes\controller\CategoryController.class
+com\shoes\model\Product.class
+com\shoes\model\Category.class
+com\shoes\model\User.class
+com\shoes\controller\SupplierController.class
+com\shoes\controller\RegisterController.class
+com\shoes\controller\ProductControl.class
+com\shoes\model\Supplier.class
+com\shoes\model\Login.class
+com\shoes\controller\AdminController.class
+com\shoes\model\Contact.class
+com\shoes\dao\ProductDao.class
+com\shoes\dao\CategoryDao.class
+com\shoes\controller\LoginController.class
+com\shoes\controller\ContactControl.class
+com\shoes\dao\SupplierDao.class
