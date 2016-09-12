@@ -4,13 +4,12 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
-
 public class Product {
 
 @Id
+@GeneratedValue
 @Column(name="Product_Id")
 int itemID;
 
@@ -24,7 +23,15 @@ int itemID;
 	@Column(name="Price")
 	double price;
 	
-	String image;
+@Column(name="image")	
+String image;
+
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
 	
 	int categoryId,supplierId;
 
@@ -66,14 +73,6 @@ int itemID;
 
 	public void setPrice(double price) {
 		this.price = price;
-	}
-
-	public String getImage() {
-		return image;
-	}
-
-	public void setImage(String image) {
-		this.image = image;
 	}
 
 	public int getCategoryId() {
