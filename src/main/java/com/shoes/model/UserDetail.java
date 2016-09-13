@@ -1,8 +1,8 @@
 package com.shoes.model;
 
-public class User {
+public class UserDetail {
 
-	String  first_name,last_name,email,password,password_confirmation,phon,address;
+	String  first_name,last_name,email,password,password_confirmation,phone,address;
 
 	public String getFirst_name() {
 		return first_name;
@@ -44,12 +44,12 @@ public class User {
 		this.password_confirmation = password_confirmation;
 	}
 
-	public String getPhon() {
-		return phon;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setPhon(String phon) {
-		this.phon = phon;
+	public void setPhon(String phone) {
+		this.phone = phone;
 	}
 
 	public String getAddress() {

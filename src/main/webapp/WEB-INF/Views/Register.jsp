@@ -51,7 +51,7 @@
 			    				</div>
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			    						<form:input type="text" name="phon" path="phon" class="form-control input-sm" placeholder="phon"></form:input>
+			    						<form:input type="text" name="phon" path="phone" class="form-control input-sm" placeholder="phone"></form:input>
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 col-sm-6 col-md-6">

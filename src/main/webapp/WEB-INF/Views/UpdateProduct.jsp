@@ -2,21 +2,17 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
 
 
 <script>
 	var supplier = ${supList};
-	
 	var category = ${catList};
-	var product = ${prodList};
 
 	
 		angular.module('myApp', []).controller('myCtrl', function($scope) {
 			$scope.supp = supplier;
 			$scope.cate = category;
-			$scope.prod = product;
 	});
 </script>
 
@@ -24,14 +20,14 @@
 <br>
 <br>
 <br>
-	<div class="container" ng-app="myApp">
+	<div class="container-fluid" ng-app="myApp">
 
 		<div
 			class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
 			<div class="panel panel-default">
 
 				<div class="panel-body">
-					<form:form action="UpdateProduct" method="post" commandName="product">
+					<form:form action="UpdateProduct" method="post" commandName="product" enctype="multipart/form-data">
 						<div class="row">
 							<div class="col-xs-6 col-sm-6 col-md-6">
 								<div class="form-group">
@@ -105,7 +101,7 @@
 							<div class="row">
 								<div class="form-group">
 									
-									<form:input type="file" path="image"
+									<form:input type="file" path="pimage"
 										class="form-control input-sm" />
 								
 								</div>

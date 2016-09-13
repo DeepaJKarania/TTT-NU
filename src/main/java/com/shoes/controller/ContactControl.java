@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.shoes.model.Contact;
-import com.shoes.model.User;
+import com.shoes.model.UserDetail;
 
 @Controller
 public class ContactControl {

@@ -30,7 +30,7 @@
 
 			<div class="panel-body">
 
-				<form:form action="addProduct" method="post" commandName="product">
+				<form:form action="addProduct" method="post" commandName="product" enctype="multipart/form-data">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6 col-md-6">
 							<div class="form-group">
@@ -116,7 +116,7 @@
 
 						<div class="form-group">
 
-							<form:input type="file" path="image"
+							<form:input type="file" path="pimage"
 								class="form-control input-sm" />
 
 						</div>
@@ -226,7 +226,7 @@
 
 								<div class="form-group">
 
-									<form:input type="file" path="image"
+									<form:input type="file" path="pimage"
 										class="form-control input-sm" />
 
 								</div>
@@ -274,7 +274,7 @@
 								<td>{{pro.categoryId}}</td>
 								<td>{{pro.description}}</td>
 								<td>{{pro.qty}}</td>
-								<td>{{pro.image}}</td>
+								<td><img src="./resources/img/{{pro.itemID}}.jpg" width="50" height="50"/></td>
 								<td class="text-center"><a class='btn btn-info btn-xs'
 									href="editProduct?pId={{pro.itemID}}">Edit</a> <a
 									href="deleteProduct?pId={{pro.itemID}}"

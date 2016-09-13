@@ -4,6 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Transient;
+
+import org.springframework.web.multipart.MultipartFile;
 
 @Entity
 public class Product {
@@ -23,17 +26,23 @@ int itemID;
 	@Column(name="Price")
 	double price;
 	
-@Column(name="image")	
-String image;
+	@Column(name="categoryId")
+	int categoryId;
+	
+	@Column(name="supplierId")
+	int supplierId;
 
-	public String getImage() {
-		return image;
+	@Transient
+	MultipartFile pimage;
+	
+	public MultipartFile getPimage() {
+		return pimage;
 	}
-	public void setImage(String image) {
-		this.image = image;
+	public void setPimage(MultipartFile pimage) {
+		this.pimage = pimage;
 	}
 	
-	int categoryId,supplierId;
+
 
 	public int getItemID() {
 		return itemID;

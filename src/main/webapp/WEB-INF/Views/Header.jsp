@@ -67,7 +67,7 @@
 	<br>
 	<div class="row">
 		<center><div class="col-md-2">
-			<img  src="resources/images/t1.jpg" class="img-circle" alt="SoleMate" width="100" height="100">
+			<img  src="resources/img/t1.jpg" class="img-circle" alt="SoleMate" width="100" height="100">
 		</div></center>
 		<div class="col-md-10">
 			<div class="page-header text-primary">

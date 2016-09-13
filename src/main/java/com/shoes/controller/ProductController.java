@@ -78,6 +78,35 @@ public class ProductController
 		m.addObject("catList",catData);
 		m.addObject("checked",true);
 		
+		String path="C:\\dummy\\Shoes\\src\\main\\webapp\\resources\\img\\";
+		path=path+String.valueOf(product.getItemID())+".jpg";
+		File f=new File(path);
+	
+		MultipartFile filedet=product.getPimage();
+		
+		if(!filedet.isEmpty())
+		{
+			try
+			{
+			  byte[] bytes=filedet.getBytes();
+			  System.out.println(bytes.length);
+			  FileOutputStream fos=new FileOutputStream(f);
+              			BufferedOutputStream bs=new BufferedOutputStream(fos);
+              			bs.write(bytes);
+              			bs.close();
+             			 System.out.println("File Uploaded Successfully");
+			}
+			catch(Exception e)
+			{
+				System.out.println("Exception Arised"+e);
+			}
+		}
+		else
+		{
+			System.out.println("File is Empty not Uploaded");
+			
+		}
+		
 		return m;
 	}
 	

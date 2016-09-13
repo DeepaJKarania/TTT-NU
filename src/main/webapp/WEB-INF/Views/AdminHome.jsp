@@ -9,7 +9,7 @@
 <body>
 <%@include file="AdminHeader.jsp" %>
 
-	
+	<%@include file="Home.jsp" %>
 				
 <%@include file="AdminFooter.jsp" %>
 	
