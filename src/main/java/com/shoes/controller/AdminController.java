@@ -7,11 +7,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AdminController {
 
 	@RequestMapping("/AdminHome")
-	public String showAboutUs() 
+	public String showAdminHome() 
 	{
 		//System.out.println("at Log");
 	return "AdminHome";
 	}
+	
+	@RequestMapping("/AboutUs")
+	public String showAboutUs() 
+	{
+		return "AboutUs";
+	}
+
 	
 //	@RequestMapping("/AddProduct")
 //	public String addProducts() 

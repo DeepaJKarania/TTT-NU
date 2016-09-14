@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Add Product</title>
+<title></title>
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
@@ -29,9 +29,14 @@
 
 
 <body>
-	<%@ include file="AdminHeader.jsp"%>
-<div class=" container">
 
+
+	<%@ include file="AdminHeader.jsp"%>
+	<br>
+	
+<div class=" container">
+<center><h4 class="text-success">Manage Category</h4></center>
+<br>
 	<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
 		<div class="panel panel-default">
 
@@ -42,7 +47,7 @@
 							<div class="form-group">
 								<form:input type="text" path="catId"
 									class="form-control input-sm floatlabel"
-									placeholder="Category ID" required="true"></form:input>
+									placeholder="Category ID" readonly="true" required="true"></form:input>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6">
@@ -77,7 +82,7 @@
 				placeholder="Search" ng-model="searchText" />
 		</div>
 
-		<div class="row col-md-6 col-md-offset-2 custyle">
+		<div class="row col-md-8 col-md-offset-2 custyle">
 			<table class="table table-striped custab">
 				<thead>
 					<tr>
@@ -92,7 +97,8 @@
 					<td>{{cate.catName}}</td>
 					<td>{{cate.catDescription}}</td>
 					<td class="text-center"><a class='btn btn-info btn-xs'
-						href="editCategory?catId={{cate.catId}}"><span class="glyphicon glyphicon-edit"></span>Edit</a> 
+						href="editCategory?catId={{cate.catId}}"><span class="glyphicon glyphicon-edit"></span>Edit</a></td>
+						<td> 
 						<a href="DeleteCategory?catId={{cate.catId}}" class="btn btn-danger btn-xs"><span
 						class="glyphicon glyphicon-remove"></span>Del
 							

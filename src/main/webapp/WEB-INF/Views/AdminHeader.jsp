@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Bootstrap Case</title>
+<title></title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -41,10 +41,7 @@
 						class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="Product">Add Product</a></li>
-						<!-- <li><a href="#">Edit Product</a></li>
-						<li><a href="#">Remove Product</a></li>
-						<li><a href="#"> Product Category</a></li>
- -->
+						
 					</ul></li>
 				<li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown" href="#"> Category <span class="caret"></span></a>
@@ -64,7 +61,7 @@
 				<li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown" href="#">Users <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="AddSupplier">Add</a></li>
+						<li><a href="UserDetail">Add</a></li>
 					</ul>
 				</ul>
 		</div>

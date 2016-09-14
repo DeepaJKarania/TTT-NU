@@ -1,23 +1,64 @@
 package com.shoes.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Transient;
+
+@Entity
 public class UserDetail {
 
-	String  first_name,last_name,email,password,password_confirmation,phone,address;
+	@Id
+	@GeneratedValue
+	int userId;
+	@Column
+	String custName;
+	@Column
+	String phone;
+	@Column
+	String email;
+	@Column
+	String address;
+	
+	@Transient
+	String pass;
 
-	public String getFirst_name() {
-		return first_name;
+	
+	public UserDetail() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
+
+	public int getUserId() {
+		return userId;
 	}
 
-	public String getLast_name() {
-		return last_name;
+
+
+
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
+
+
+	public String getCustName() {
+		return custName;
+	}
+
+	public void setCustName(String custName) {
+		this.custName = custName;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public String getEmail() {
@@ -28,30 +69,6 @@ public class UserDetail {
 		this.email = email;
 	}
 
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getPassword_confirmation() {
-		return password_confirmation;
-	}
-
-	public void setPassword_confirmation(String password_confirmation) {
-		this.password_confirmation = password_confirmation;
-	}
-
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhon(String phone) {
-		this.phone = phone;
-	}
-
 	public String getAddress() {
 		return address;
 	}
@@ -59,5 +76,15 @@ public class UserDetail {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+	
+	
 	
 }

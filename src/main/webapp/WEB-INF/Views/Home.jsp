@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%@include file="Header.jsp" %>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
@@ -101,30 +101,9 @@
 			</div>
 		</div>
 
-
-
-		<!-- Display Search Products-->
-
-		<div class="row">
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-							<div class="panel-heading">
-								<h3 class="panel-title">SPORTS</h3>
-							</div>
-							<div class="panel-body">
-								<img class="img-circle" alt="SoleMate"
-									src="resources/img/m1.jpg">
-							</div>
-							<div class="panel-footer">
-								<input type="button" class="button-warning" value="add to cart">
-							</div>
-						</div>
-			</div>
-		</div>
-
 	</div>
 
-
+<%@include file="Footer.jsp" %>
 
 </body>
 </html>

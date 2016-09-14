@@ -31,12 +31,12 @@
 			    			 <form:input type="password"  path="password" class="form-control input-sm floatlabel" placeholder="Password" required="true"></form:input>
 			    		</div>
 			    	
-			    		<input class="btn btn-lg btn-info btn-block" type="submit" value="Login">
+			    		<input class="btn btn-sm btn-info btn-block" type="submit" value="Login">
 			    	</fieldset>
 			      	</form:form>
 			      	<br>
 			      
-			    <a href=""></a><input class="btn btn-lg btn-info btn-block" type="button" value="Forget Password"></a>
+			    <a href=""></a><input class="btn btn-sm btn-info btn-block" type="button" value="Forget Password"></a>
 			      	
 			    </div>
 			</div>

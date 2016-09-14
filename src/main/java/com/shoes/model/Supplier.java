@@ -8,9 +8,9 @@ import javax.persistence.Id;
 @Entity
 public class Supplier {
 
-   @Id	
+   @Id	   
    @GeneratedValue
-    int supId;
+   int supId;
    @Column
 	String supName;
    @Column

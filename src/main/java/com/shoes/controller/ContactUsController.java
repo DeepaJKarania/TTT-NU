@@ -10,7 +10,7 @@ import com.shoes.model.Contact;
 import com.shoes.model.UserDetail;
 
 @Controller
-public class ContactControl {
+public class ContactUsController {
 
 	@RequestMapping(value = "/Contact", method = RequestMethod.GET)  
 	public String displayRegister(@ModelAttribute("Contact")Contact contact) { 
@@ -18,17 +18,6 @@ public class ContactControl {
 	}
 	
 	
-		@RequestMapping( value="/Contact" ,method = RequestMethod.POST)
-	   public String addUser(@ModelAttribute("SpringWeb")Contact contact, 
-	   ModelMap model) {
-			model.addAttribute("name",contact.getName());
-			
-			model.addAttribute("email",contact.getEmail());
-			
-			model.addAttribute("message",contact.getMessage());
-			
-			
-	      return "Thanks";
-	   }
+		
 	
 }

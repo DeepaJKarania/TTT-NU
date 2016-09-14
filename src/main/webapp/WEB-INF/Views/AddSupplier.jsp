@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Add Product</title>
+<title></title>
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
@@ -31,7 +31,8 @@
 <body>
 	<%@ include file="AdminHeader.jsp"%>
 <div class=" container">
-
+<br>
+<center><h4 class="text-success">Manage Supplier</h4></center><br>
 	<div
 		class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
 		<div class="panel panel-default">
@@ -43,7 +44,7 @@
 							<div class="form-group">
 								<form:input type="text" path="supId"
 									class="form-control input-sm floatlabel"
-									placeholder="Supplier ID" required="true"></form:input>
+									placeholder="Supplier ID" readonly="true"></form:input>
 							</div>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6">
@@ -94,7 +95,7 @@
 					<td>{{supr.supAddress}}</td>
 					<td class="text-center"><a class='btn btn-info btn-xs'
 						href="editSupplier?supId={{supr.supId}}"><span class="glyphicon glyphicon-edit"></span>Edit</a> 
-						<a href="DeleteSupplier?supId={{supr.supId}}" class="btn btn-danger btn-xs"><span
+						</td><td><a href="DeleteSupplier?supId={{supr.supId}}" class="btn btn-danger btn-xs"><span
 						class="glyphicon glyphicon-remove"></span>Del
 							
 				</a></td>

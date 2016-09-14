@@ -34,7 +34,7 @@
 					<ul class="nav navbar-nav">
 		 
 						<li class="">
-							<a href="Home"><span class="glyphicon glyphicon-home">   Home</span></a>
+							<a href="Home"><span class="glyphicon glyphicon-home">Home</span></a>
 						</li>
 						<li>
 							<a href="AboutUs">About Us</a>
@@ -51,7 +51,7 @@
 							<a href="Login"><span class="glyphicon glyphicon-off">  SignIn</span></a>
 						</li>
 						<li>
-							<a href="Register"><span class="glyphicon glyphicon-user">  SignUp</span></a>
+							<a href="UserDetail"><span class="glyphicon glyphicon-user">  SignUp</span></a>
 						</li>
 					</ul>
 					

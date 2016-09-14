@@ -22,6 +22,10 @@
 
 
 <div class="container-fluid" ng-app="myApp">
+
+<br>
+<center><h4 class="text-success">Manage Product</h4></center>
+<br>
 <c:choose>
 
 <c:when test="${checked}">
@@ -37,7 +41,7 @@
 								Product ID
 								<form:input type="text" path="itemID"
 									class="form-control input-sm floatlabel"
-									placeholder="Product Id" />
+									placeholder="Product Id" readonly="true"/>
 
 							</div>
 
@@ -276,7 +280,8 @@
 								<td>{{pro.qty}}</td>
 								<td><img src="./resources/img/{{pro.itemID}}.jpg" width="50" height="50"/></td>
 								<td class="text-center"><a class='btn btn-info btn-xs'
-									href="editProduct?pId={{pro.itemID}}">Edit</a> <a
+									href="editProduct?pId={{pro.itemID}}">Edit</a></td>
+									<td> <a
 									href="deleteProduct?pId={{pro.itemID}}"
 									class="btn btn-danger btn-xs">Delete</a></td>
 							</tr>

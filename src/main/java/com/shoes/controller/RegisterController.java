@@ -6,43 +6,54 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.shoes.model.Login;
 import com.shoes.model.UserDetail;
 
 @Controller
 
 public class RegisterController {
 
-//	@RequestMapping(method = RequestMethod.GET)  error
-//	   public ModelAndView UserDetail() {
-//	      return new ModelAndView("UserDetail", "command", new UserDetail());
-//	   }
-//	   
-
-	@RequestMapping(value = "/Register", method = RequestMethod.GET)  
-	public String displayRegister(@ModelAttribute("register")UserDetail UserDetail) { 
-    return "Register"; 
+//
+//	RegisterController()
+//	{
+//		
+//	}
+////	
+	@RequestMapping(value="/Login", method = RequestMethod.GET) 
+	public String displayLogin(@ModelAttribute("login")Login login) { 
+	    return "Login"; 
 	}
-	
-	
-		@RequestMapping( value="/Register" ,method = RequestMethod.POST)
-	   public String addUserDetail(@ModelAttribute("SpringWeb")UserDetail userDetail, 
-	   ModelMap model) {
-			model.addAttribute("first_name",userDetail.getFirst_name());
-			
-			model.addAttribute("last_name",userDetail.getLast_name());
-			
-			model.addAttribute("password",userDetail.getPassword());
-			
-			model.addAttribute("password_confirmation",userDetail.getPassword_confirmation());
-			
-			model.addAttribute("phone",userDetail.getPhone());
-			
-			model.addAttribute("address",userDetail.getAddress());
-			
-	      return "Thanks";
-	   }
-		
-
+//
+////	
+//	
+//	
+//	
+//	
+//	@RequestMapping( value="/UserDetail" ,method = RequestMethod.POST)
+//	   public String addUser(@ModelAttribute("SpringWeb")UserDetail userDetail, 
+//	   ModelMap model) {
+//			
+//		model.addAttribute("User_ID",userDetail.getUserId());
+//		
+//		model.addAttribute("Customer_Name",userDetail.getCustName());
+//		
+//		model.addAttribute("Phone_No",userDetail.getPhone());
+//		
+//			model.addAttribute("Address",userDetail.getAddress());
+//			
+//			model.addAttribute("Password",userDetail.getPass());
+//			
+//	   return "Home";
+//	   }
+//	
+//	@RequestMapping("/Login")
+//	public String showLogin() 
+//	{
+//		System.out.println("done");
+//	return "Login";
+//	}
+//	
+//
 
 
 

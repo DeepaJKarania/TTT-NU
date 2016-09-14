@@ -17,19 +17,19 @@
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
         	<div class="panel panel-default">
         		<div class="panel-heading">
-			    		<h3 class="panel-title"> sign up <small>It's free!</small></h3>
+			    		<h3 class="panel-title"> Sign up </h3>
 			 			</div>
 			 			<div class="panel-body">
-			    		<form:form  method="post" commandName="register">
+			    		<form:form  action="UserDetail" method="post" commandName="userDetail">
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			                <form:input type="text"  path="first_name" class="form-control input-sm floatlabel" placeholder="First Name" required="true"></form:input>
+			                <form:input type="text"  readonly="true" path="userId" class="form-control input-sm floatlabel" placeholder="ID" required="true"></form:input>
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			    						<form:input type="text" name="last_name" path="last_name" class="form-control input-sm" placeholder="Last Name"></form:input>
+			    						<form:input type="text" name="Cust_name" path="custName" class="form-control input-sm" placeholder="Customer Name"></form:input>
 			    					</div>
 			    				</div>
 			    			</div>
@@ -41,26 +41,22 @@
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			    						<form:input type="password" name="password" path="password" class="form-control input-sm" placeholder="Password"></form:input>
+			    						<form:input type="password" name="password" path="pass" class="form-control input-sm" placeholder="Password"></form:input>
 			    					</div>
 			    				</div>
+			    				
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			    						<form:input type="password" name="password_confirmation" path="password_confirmation" class="form-control input-sm" placeholder="Confirm Password"></form:input>
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<form:input type="text" name="phon" path="phone" class="form-control input-sm" placeholder="phone"></form:input>
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						
-			    					<form:textarea path="address" name="address" class="form-control input-sm" placeholder="address"></form:textarea>
+			    						<form:input type="text" name="phone" path="phone" class="form-control input-sm" placeholder="phone"></form:input>
 			    					</div>
 			    				</div>
 			    			</div>
+			    					<div class="form-group">
+			    						
+			    					<form:textarea path="address" name="address" class="form-control input-sm" placeholder="address"></form:textarea>
+			    					
+			    				</div>
+			    			
 			    			
 			    			
 			    			<input type="submit" value="Register" class="btn btn-info btn-block">
@@ -72,6 +68,7 @@
 	
     </div>
     </div>
+</div>
 
 				
 		<%@include file="Footer.jsp" %>
